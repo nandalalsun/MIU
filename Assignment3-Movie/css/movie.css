@@ -100,8 +100,9 @@ dd > ul > li{
 
 
 .css-images{
-    position: absolute;
+    position: fixed;
     right: 0;
-    bottom: -450px;
+    bottom: 0;
+    opacity: 50%;
 }
 
