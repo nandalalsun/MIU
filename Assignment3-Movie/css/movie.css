@@ -24,7 +24,7 @@ body{
     margin-left: 25%;
 }
 
-.main-box section{
+.main-box > div{
     display:inline-block;
     vertical-align: top;
 }
