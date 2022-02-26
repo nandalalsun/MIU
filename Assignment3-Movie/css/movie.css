@@ -1,0 +1,107 @@
+body{
+    background-image: url("../images/background.png");
+    margin: 0;
+    padding: 0;
+    font-size: 100%;
+    line-height: 1;
+}
+
+#banner {
+    background-image: url("../images/bannerbg.png");
+}
+#banner img{
+    padding-left: 25%;
+}
+.title1{
+    text-align: center;
+    text-shadow: 3px 3px #999999;
+}
+
+.main-box{
+    border: 3px solid rgb(107, 107, 107);
+    border-radius: 22px;
+    width: 800px;
+    margin-left: 25%;
+}
+
+.main-box section{
+    display:inline-block;
+    vertical-align: top;
+}
+
+#rotten img{
+    border-top-left-radius: 20px;
+}
+#rotten{
+    border-top-left-radius: 20px;
+    font-size: 5em;
+    font-weight: 800;
+    color: rgb(243, 37, 37);
+    background-image: url("../images/rbg.png");
+    width: 103%;
+    height: 83px;
+}
+#rotten > span{
+    position: relative;
+    bottom: 15px;
+}
+
+#right-side{
+    background-color: #a2b964;
+    border-top-right-radius: 20px;
+    border-bottom-right-radius: 20px;
+    width: 250px;
+    float: right;
+    padding-bottom: 50px;
+}
+#right-side img{
+    border-top-right-radius: 20px;
+}
+#right-side > dl{
+    padding: 5px;
+}
+#left-side{
+    width: 67%;
+}
+
+.left-left {
+    display: flex;
+}
+.left-left img{
+    float: left;
+    padding-right: 5px;
+}
+
+dd > ul > li{
+    list-style-type: none;
+}
+
+.p-boxed {
+    border-radius: 10px;
+    border: 2px solid rgb(114, 114, 114);
+    padding: 5px;
+    padding-bottom: 15px;
+    background-color: #e8dc9b;
+    margin-bottom: 27px;
+    margin-top: 27px;
+    margin-left: 5px;
+}
+
+.footer-page{
+    background-color: #a2b964;
+    border-bottom-left-radius: 20px;
+    padding: 10px;
+    text-align: center;
+    width: 115%;
+    margin-top: 46px;
+    position: relative;
+    bottom: -16px;
+}
+
+
+.css-images{
+    position: absolute;
+    right: 0;
+    bottom: -450px;
+}
+
