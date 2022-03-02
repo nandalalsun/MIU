@@ -1,0 +1,54 @@
+.navbar-light {
+    background-color: #44acec;
+  }
+  
+  .navbar-light .navbar-brand {
+    color: white;
+  }
+  
+  .navbar-light .navbar-nav .active > .nav-link {
+    color: white;
+  }
+  
+  .navbar-light .navbar-nav .nav-link {
+    color: white;
+  }
+  
+  .navbar-light .navbar-text {
+    color: white;
+    margin-right: 20px;
+  }
+  
+  .vr {
+    color: white;
+    border: 0.5px solid currentColor;
+    margin-left: 20px;
+    margin-right: 20px;
+  }
+  
+  form {
+    display: flex;
+    flex-direction: column;
+    width: 80%;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 5%;
+  }
+  
+  form #buttons {
+    margin-left: auto;
+    margin-right: 5px;
+  }
+  
+  #validDate {
+    font-size: 0.8em;
+    color: gray;
+  }
+  
+  #formTitle {
+    font-size: 1.5em;
+  }
+  
+  #buttons .btn {
+    margin-left: 25px;
+  }
