@@ -1,0 +1,43 @@
+body {
+    background-color: black;
+    margin: 0;
+    padding: 0;
+    font-weight: 700;
+    text-align: center;
+}
+p{
+    color: aliceblue;
+    font-size: 5em;
+    font-family: fantasy;
+}
+
+.container{
+    margin-top: 350px;
+    position: static;
+}
+
+.btn{
+    width: 200px;
+    background-color: rgb(93, 235, 93);
+    color: aliceblue;
+    font-weight: 500;
+    font-size: larger;
+}
+
+.btn-stop{
+    width: 200px;
+    background-color: rgb(235, 33, 117);
+    color: aliceblue;
+    font-weight: 500;
+    font-size: larger;
+}
+
+.btn-reset{
+    width: 200px;
+    background-color: rgb(194, 10, 10);
+    color: aliceblue;
+    font-weight: 500;
+    font-size: larger;
+    margin-top: 10px;
+}
+

@@ -23,40 +23,40 @@ function isVowel(a){
 }
 
 //Question no 4
-function sum(a){
+function sum(arr){
     let sum = 0;
-    for(let i = 0; i < a.length; i++){
-        sum = sum + a[i];
+    for(let i = 0; i < arr.length; i++){
+        sum = sum + arr[i];
     }
     return sum;
 }
 
 //Question no 4 1
-function multiply(a){
+function multiply(arr){
     let mul = 1;
-    for(let i = 0; i < a.length; i++){
-        mul = mul * a[i];
+    for(let i = 0; i < arr.length; i++){
+        mul = mul * arr[i];
     }
     return mul;
 }
 
 
 //Question no 5
-function reversr(a){
+function reverse(arr){
     let rev = "";
-    for(let i = 0; i < a.length; i++){
-        rev = a.charAt(i) + rev;
+    for(let i = 0; i < arr.length; i++){
+        rev = arr.charAt(i) + rev;
     }
     return rev;
 }
 
 
 //Question no 6
-function findLongestWord(a){
-    let x = a[0];
-    for(let i = 1; i < a.length; i++){
-        if(x.length < a[i].length){
-            x = a[i];
+function findLongestWord(arr){
+    let x = arr[0];
+    for(let i = 1; i < arr.length; i++){
+        if(x.length < arr[i].length){
+            x = arr[i];
         }
     }
     return x;
@@ -83,23 +83,23 @@ function computeSumOfSquares(arr){
 
 
 //Question no 9
-function printOddNumbersOnly(array) {
-    let odd = array.filter(e => e % 2 != 0);
+function printOddNumbersOnly(arr) {
+    let odd = arr.filter(e => e % 2 != 0);
     return odd;
 }
 
 // Question no 10
-function computeSumOfSquaresOfEvensOnly(array) {
-    let sumOfEven = array.filter(x => x % 2 === 0).reduce((p, c) => p + c ** 2, 0);
+function computeSumOfSquaresOfEvensOnly(arr) {
+    let sumOfEven = arr.filter(x => x % 2 === 0).reduce((p, c) => p + c ** 2, 0);
     return sumOfEven;
 }
 
 // Question no 11
-function sum(array){
-    return array.reduce((previous, current) => previous + current, 0);
+function sumUsingFunct(arr){
+    return arr.reduce((previous, current) => previous + current, 0);
 }
 
-function mul(arr){
+function mulUsingFunct(arr){
     return arr.reduce((previous, current) => previous * current, 1);
 }
 
@@ -124,5 +124,13 @@ function printFibo(x,a,b) {
 }
 
 
+var test_btn = document.getElementById("test-btn");
+
+const questionNo = document.querySelector('#question_option');
+
+questionNo.addEventListener('change', (event) => {
+  const result = document.querySelector('.result');
+  result.textContent = `You like ${event.target.value}`;
+});
 
 

@@ -52,3 +52,11 @@
   #buttons .btn {
     margin-left: 25px;
   }
+
+  #b{
+    display: none;
+  }
+  #c{
+    display: none;
+    /* display:flex; */
+  }
