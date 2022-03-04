@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Student Registration Form</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <link rel="stylesheet" href="./css/style.css">
+</head>
+<body>
+    <div class="container">
+        <p id="title">Student Registration Form</p>
+
+        <span>
+        <form action="">
+            <fieldset class="form-input">
+                <legend>Bio Data</legend>
+                
+                <div>
+                    <label for="name">Full Name*</label>
+                <input type="text" placeholder="Enter full name">
+                </div>
+
+                <div>
+                    <label for="">Date of birth*</label>
+                   
+                    <input type="date" id="start" name="trip-start"
+                    value="2018-07-22" 
+                    min="2018-01-01" max="2018-12-31">
+                </div>
+
+            </fieldset>
+
+            <fieldset class="form-input">
+                <legend>Academic Enrollment Data</legend>
+                <label for="">Student ID *</label>
+                <input type="text" placeholder="000-XX-XXX" required>
+                
+                <div class="radio">
+                    <label for="">Level of Study: </label> <br/>
+                    <label for="">Graduate:</label>
+                    <input type="radio" name="level" value="Graduate">
+                    <label for="">UnderGraduate:</label>
+                    <input type="radio" name="level" value="UnderGrad">
+                </div>
+                
+            </fieldset>
+
+            <div class="btn-group">
+                <button>Cancel</button>
+                <button>Reset</button>
+                <button>Register</button>
+            </div>
+        </form>
+    </div>
+</body>
+</html>
