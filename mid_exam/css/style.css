@@ -69,3 +69,9 @@ footer{
     position: fixed;
     right: 10px;
 }
+
+.css_checker{
+    float: right;
+    position: relative;
+    bottom: 55px;
+}
