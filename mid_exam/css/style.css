@@ -1,0 +1,64 @@
+nav {
+    background-color: #e95420;
+    text-align: left;
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color: azure;
+    width: 100%;
+    padding: 10px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    float: left;
+}
+.welcome_guest{
+    float: right;
+}
+
+h3, h1{
+    padding-top: 30px;
+}
+
+img{
+    width: 95%;
+}
+
+nav a:link{
+    color: rgb(240, 240, 240);
+    margin-left: 15px;
+}
+nav a:visited{
+    color: azure;
+}
+a:active{
+    color: rgb(246, 168, 65);
+}
+
+.down .email {
+    color: red;
+}
+
+#radio_for_patient{
+    margin-left: 10px;
+    padding-left: 10px;
+    text-align: center;
+    font-size: 15px;
+}
+
+#button_group {
+    text-align: right;
+}
+
+footer{
+    background-color: beige;
+    font-size: 15px;
+    padding: 10px;
+    padding-left: 30px;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+}
+
+.left_footer{
+    float: right;
+    position: fixed;
+    right: 10px;
+}

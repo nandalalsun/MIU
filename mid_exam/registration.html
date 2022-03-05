@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registration Form</title>
+    <link rel="stylesheet" href="./css/style.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.3.1/dist/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <script src="./js/app.js" defer></script>
+</head>
+<body>
+    <header>
+        <nav>
+            <span>HolyCrossMedical Center</span>
+            <a href="./index.html">Home</a>
+            <a href="./registration.html">Patient</a>
+
+            <span class="welcome_guest">Welcome, Guest</span>
+        </nav>
+    </header>
+    <main>
+        <div class="container">
+            <h1>Patient Registration Form</h1>
+            <hr>
+            <div class="reg_form">
+                <form action="#">
+                    <div class="form-row">
+                        <div class="form-group col-md-12">
+                            <label>*Patient ID No:</label>
+                            <input type="text" placeholder="EP-XXX-XXXXXX" pattern="EP-\d{3}-\d{6}" required class="form-control" id="patientID">
+                            <small class="form-text text-muted">This is some help text that breaks onto a new line and may extend more than one line.</small>
+                        </div>
+                    </div>
+
+                    <div class="form-row">
+                        <div class="form-group col-md-4">
+                            <label>*First Name:</label>
+                            <input type="text" placeholder="First Name" pattern="[a-zA-z]*" class="form-control" required id="fname">
+                            <small class="form-text text-muted">Please enter the first name.</small>
+                        </div>
+                        <div class="form-group col-md-4">
+                            <label>Middle Name:</label>
+                            <input type="text" placeholder="Middle Name" class="form-control" id="mname">
+                            <small class="form-text text-muted">Please enter the first name.</small>
+                        </div>
+                        <div class="form-group col-md-4">
+                            <label>*Last Name:</label>
+                            <input type="text" placeholder="Last Name" class="form-control" required id="lname">
+                            <small class="form-text text-muted">Please enter the first name.</small>
+                        </div>
+                    </div>
+
+                    <div class="form-row">
+                        <div class="form-group col-md-4">
+                            <label>*Date of birth</label>
+                            <input type="datetime-local" placeholder="" class="form-control" required id="dob">
+                        </div>
+                       
+                        <div class="form-group col-md-4">
+                            <label>*Department</label>
+                            <select name="department" class="custom-select mr-sm-2" required id="department">
+                                <option value="Department 1">Department 1</option>
+                                <option value="Department 2">Department 2</option>
+                                <option value="Department 3">Department 3</option>
+                            </select>
+                        </div>
+
+                        <div class="form-group col-md-4">
+                                <label>*Is this an out-patient?</label></br>
+                                <label>Yes:</label>
+                                <input type="radio" name="patient" value="Yes" class="col-3">
+                                <label>No:</label>
+                                <input type="radio" name="patient" value="No" class="col-3">
+                        </div>
+
+                    </div>
+                    <div class="row" id="button_group">
+                        <div class="col-8">
+
+                        </div>
+                        <div class="col-4">
+                            <button type="btnReset" class="btn btn-secondary">Reset</button>
+                            <button id="btnSubmit" class="btn btn-warning">Register Patient</button>
+                        </div>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </main>
+    <footer>
+        <div class="row">
+            <span>Sunil Timilsina :: CS472-WAP</span> 
+            <span class="left_footer">HCMC &copy; March 2022</span>
+        </div>
+    </footer>
+</body>
+</html>

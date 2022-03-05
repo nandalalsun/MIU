@@ -29,12 +29,12 @@ legend {
 }
 
 .radio{
-    width: auto;
     float: left;
 }
 
 .btn-group{
     float: right;
+    margin-top: 50px;
 }
 
 button{
