@@ -59,7 +59,7 @@
                        
                         <div class="form-group col-md-4">
                             <label>*Department</label>
-                            <select name="department" class="custom-select mr-sm-2" required id="department">
+                            <select name="department" class="custom-select mr-sm-2" required id="department" size="3" multiple>
                                 <option value="Department 1">Department 1</option>
                                 <option value="Department 2">Department 2</option>
                                 <option value="Department 3">Department 3</option>
@@ -68,10 +68,8 @@
 
                         <div class="form-group col-md-4">
                                 <label>*Is this an out-patient?</label></br>
-                                <label>Yes:</label>
-                                <input type="radio" name="patient" value="Yes" class="col-3">
-                                <label>No:</label>
-                                <input type="radio" name="patient" value="No" class="col-3">
+                                Yes:<input type="radio" name="patient" value="Yes" class="col-3">
+                                No:<input type="radio" name="patient" value="No" checked class="col-3">
                         </div>
 
                     </div>
@@ -80,8 +78,8 @@
 
                         </div>
                         <div class="col-4">
-                            <button type="btnReset" class="btn btn-secondary">Reset</button>
-                            <button id="btnSubmit" class="btn btn-warning">Register Patient</button>
+                            <button type="reset" class="btn btn-secondary">Reset</button>
+                            <button type="submit" id="btnSubmit" class="btn btn-warning">Register Patient</button>
                         </div>
                     </div>
                 </form>
