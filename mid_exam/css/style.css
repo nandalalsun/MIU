@@ -9,8 +9,15 @@ nav {
     padding-bottom: 10px;
     float: left;
 }
+nav .holyCross{
+    font-size: 20px;
+    margin-left: 50px;
+    color: white;
+}
 .welcome_guest{
     float: right;
+    margin-right: 50px;
+    color: rgb(255, 255, 255);
 }
 
 h3, h1{
