@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>The South West - Regional Census</title>
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootswatch@4.5.2/dist/flatly/bootstrap.min.css"
+      integrity="sha384-qF/QmIAj5ZaYFAeQcrQ6bfVMAh4zZlrGwTPY7T/M+iTTLJqJBJjwwnsE5Y0mV7QK"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="./css/form.css" />
+    <script src="./js/app.js" defer></script>
+  </head>
+  <body onload="timeShow()">
+    <header>
+      <nav class="navbar navbar-expand-lg navbar-dark bg-primary" id="navbar">
+        <div class="container-fluid">
+          <a class="navbar-brand" href="#">The South West - Regional Census</a>
+          <button
+            class="navbar-toggler"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#navbarColor01"
+            aria-controls="navbarColor01"
+            aria-expanded="false"
+            aria-label="Toggle navigation"
+          >
+            <span class="navbar-toggler-icon"></span>
+          </button>
+
+          <div class="collapse navbar-collapse" id="navbarColor01">
+            <ul class="navbar-nav me-auto">
+              <li class="nav-item">
+                <a class="nav-link" href="./index.html">Home </a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link active" href="#">Census Form</a>
+              </li>
+              <li class="nav-item">
+                <span class="nav-link" id="guest"></span>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+    </header>
+    <main>
+      <div><h3>Census Form</h3></div>
+      <hr />
+      <form action="" id="patient-form">
+        <div class="form-row">
+          <div class="fom-group col-12 mt-4">
+            <label class="text-muted form-text" for="fullname"
+              >*Full Name:</label
+            >
+            <input
+              type="text"
+              class="form-control"
+              id="fullname"
+              placeholder="Enter your Full Name"
+              required
+            />
+            <small class="text-muted form-text"
+              >Enter your Full Name as printed on your Government-issued
+              ID</small
+            >
+          </div>
+        </div>
+        <div class="form-row">
+          <div class="fom-group col-6 mt-3">
+            <label class="text-muted form-text" for="citizenID"
+              >*Citizen ID:</label
+            >
+            <input
+              type="text"
+              class="form-control"
+              id="citizenID"
+              placeholder="XXXXXXXXXX"
+              pattern="\d{10}"
+              required
+            />
+            <small class="text-muted form-text"
+              >Enter your 10-Digit Citizen ID</small
+            >
+          </div>
+          <div class="fom-group col-6 mt-3">
+            <label class="text-muted form-text" for="ssn"
+              >*Social Security Number:</label
+            >
+            <input
+              type="text"
+              class="form-control"
+              id="ssn"
+              placeholder="XXX-XX-XXXX"
+              pattern="\d{3}-\d{2}-\d{4}"
+              required
+            />
+            <small class="text-muted form-text"
+              >Enter your Social Security Number (in the format shown)</small
+            >
+          </div>
+        </div>
+        <div class="form-row">
+          <div class="form-group col-6 mt-3">
+            <label class="text-muted form-text" for="state">*State</label>
+            <select class="form-control" id="state" name="state" size="1" required>
+                <option value="NaN">Select...</option>
+              <option value="Arizona">Arizona</option>
+              <option value="Mexico">Mexico</option>
+              <option value="Texas">Texas</option>
+            </select>
+          </div>
+          <div class="fom-group col-6 mt-3">
+            <label class="text-muted" for="citizen-type"
+              >*Senior Citizen?</label
+            >
+            <br />
+            <div class="form-check form-check-inline">
+              <input
+                class="form-check-input"
+                type="radio"
+                name="isSenior"
+                id="senior"
+                value="Yes"
+                checked
+              />
+              <label class="form-check-label" for="out-patient">Yes</label>
+            </div>
+            <div class="form-check form-check-inline">
+              <input
+                class="form-check-input"
+                type="radio"
+                name="isSenior"
+                id="non-senior"
+                value="No"
+              />
+              <label class="form-check-label" for="in-patient">No</label>
+            </div>
+          </div>
+        </div>
+        <div class="form-row" id="buttons">
+          <div class="form-group mt-2">
+            <button type="reset" class="btn btn-secondary">Reset</button>
+            <button class="btn btn-primary" id="submitBtn">Submit</button>
+          </div>
+        </div>
+      </form>
+    </main>
+    <footer>
+      <span class="author">Sunil Timilsina:::CS472-WAP</span>
+      <span class="copyright">&copy; March 2022</span>
+    </footer>
+  </body>
+</html>

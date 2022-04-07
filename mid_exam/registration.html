@@ -9,14 +9,14 @@
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.3.1/dist/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
     <script src="./js/app.js" defer></script>
 </head>
-<body>
+<body onload="timeShow()">
     <header>
         <nav>
             <span>HolyCrossMedical Center</span>
             <a href="./index.html">Home</a>
             <a href="./registration.html">Patient</a>
 
-            <span class="welcome_guest">Welcome, Guest</span>
+            <span class="welcome_guest" id="guest">Welcome, Guest</span>
         </nav>
     </header>
     <main>
@@ -84,6 +84,20 @@
                             <button type="submit" id="btnSubmit" class="btn btn-warning">Register Patient</button>
                         </div>
                     </div>
+                </form>
+                <form action="index.html" method="GET">
+                    <fieldset>
+                        <legend>Choose your interests</legend>
+                        <div>
+                          <input type="checkbox" id="coding" name="interest" value="coding">
+                          <label for="coding">Coding</label>
+                        </div>
+                        <div>
+                          <input type="checkbox" id="music" name="interest" value="music">
+                          <label for="music">Music</label>
+                        </div>
+                      </fieldset>
+                      <button type="submit">Submit</button>
                 </form>
             </div>
         </div>

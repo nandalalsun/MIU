@@ -1,0 +1,68 @@
+<html>
+  <head>
+    <title>Expense Tracker</title>
+
+    <style type="text/css">
+      table {
+        display: none;
+      }
+      th,
+      td {
+        border: 1px solid black;
+        border-collapse: collapse;
+      }
+    </style>
+  </head>
+
+  <body>
+    <h1>Expense Tracker</h1>
+
+    <form action="">
+      <label for="date">Date: </label>
+      <input type="date" id="date" />
+      <br />
+
+      <label for="desc">Description: </label>
+      <input type="text" id="desc" />
+      <br />
+
+      <label for="amount">Amount: </label>
+      <input type="text" id="amount" />
+      <br />
+
+      <input type="button" id="submit" value="Submit" />
+      <br />
+    </form>
+
+    <table id="table">
+      <tr>
+        <th>#</th>
+        <th>Date</th>
+        <th>Description</th>
+        <th>Amount</th>
+      </tr>
+    </table>
+
+    <script type="text/javascript">
+      var tableNo = 1;
+      document.getElementById("submit").onclick = function () {
+        document.getElementById("table").style.display = "block";
+
+        var table = document.getElementById("table");
+        var row = table.insertRow(-1);
+        var no = row.insertCell(0);
+        var date = row.insertCell(1);
+        var desc = row.insertCell(2);
+        var amt = row.insertCell(3);
+
+        no.innerHTML = tableNo;
+        date.innerHTML = document.getElementById("date").value;
+        desc.innerHTML = document.getElementById("desc").value;
+        amt.innerHTML = document.getElementById("amount").value;
+        tableNo += 1;
+
+        return false;
+      };
+    </script>
+  </body>
+</html>

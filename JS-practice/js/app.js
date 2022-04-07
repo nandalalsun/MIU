@@ -18,6 +18,5 @@ var c = function(a, b, c){
     var x = 10;
 }
 
-c(9,9,10);
-document.write(b);
-document.write(x);
+// c(9,9,10);
+console.log("Hello");
